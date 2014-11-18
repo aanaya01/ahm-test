@@ -1,148 +1,63 @@
 /* #Site Styles
 ================================================== */
+.page-footer {
+  clear: both;
+}
+
 /* #Navigation Styles
 ================================================== */
-/*header nav {
-	ul {
-		background: $brand-orange;
-		float:left;
-		a {
-			text-decoration: none;
-			color:#fff;
-			&:hover {
-				color: $brand-orange;
-				background:url(../images/bg_nav_hover.png) center bottom no-repeat;
-			}
-		}
-		li {
-			float:left;
-			position:relative;
-
-			&:hover ul{
-				display:block;
-			}
-		}
-		ul{
-			background:#fff;
-			border:8px solid $light-grey;
-			display:none;
-			position:absolute;
-
-			li {
-				float:none;
-			}
-		}
-		.cart {
-			float:right;
-			color:#fff;
-		}
-	}
-}
-
-
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
-}
-
-.nav-collapse li {
-  width: 100%;
-  display: block;
-}
-
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-}
-
-.nav-collapse.opened {
-  max-height: 9999px;
-}
-
-.disable-pointer-events {
-  pointer-events: none !important;
-}
-
-.nav-toggle {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative;
-  }
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
-}
-*/
 .nav {
   position: relative;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 900;
+  width: 763px;
+  background: #ff5a00;
 }
-
-.nav-list {
+.nav .nav-list {
   text-align: left;
 }
-
-.nav-item {
+.nav .nav-list .nav-item {
   float: left;
   *display: inline;
   zoom: 1;
-  position: relative;
+  margin-bottom: 0;
+  margin-right: 25px;
+  /*position:relative;*/
 }
-
-.nav-item a {
+.nav .nav-list .nav-item a {
   display: block;
-  color: #FFF;
+  text-decoration: none;
+  color: #fff;
   padding: 15px 20px;
-  background: #7A1E61;
-  border-bottom: 1px solid #8B2870;
+  background: #ff5a00;
+  font-size: 18pt;
 }
-
-.nav-item > a:hover {
-  background: #822368;
+.nav .nav-list .nav-item > a:hover {
+  color: #ff5a00;
+  background: #6f2c07 url(../images/bg_nav_hover.png) 50% 85% no-repeat;
 }
-
-.nav-item:hover .nav-submenu {
+.nav .nav-list .nav-item:hover .nav-submenu {
   display: block;
 }
-
-/* Navigation submenu */
-.nav-submenu {
-  display: none;
-  position: absolute;
-  left: 0;
-  width: 180px;
+.nav .nav-list .nav-item .nav-submenu {
+  margin: 0;
 }
-
-.nav-submenu-item a {
-  background: #8B2770;
-  border-bottom: 1px solid #9A337E;
+.nav .nav-list .nav-item .nav-submenu .nav-submenu-item {
+  margin-bottom: 0;
+}
+.nav .nav-list .nav-item .nav-submenu .nav-submenu-item a {
   display: block;
   padding: 15px;
+  background: #fff;
+  color: #828282;
+}
+.nav .nav-list .nav-item .nav-submenu .nav-submenu-item a:hover {
+  background-color: #828282;
+  color: #fff;
 }
 
-.nav-submenu-item a:hover {
-  background: #932C77;
+.cart {
+  float: right;
+  color: #fff;
 }
 
 /* Mobile navigation */
@@ -170,7 +85,6 @@
   width: 50px;
   cursor: pointer;
 }
-
 .nav-click i {
   display: block;
   height: 48px;
@@ -178,7 +92,6 @@
   background: url(../img/drop.svg) no-repeat center center;
   background-size: 20px;
 }
-
 .nav-click:hover {
   background-color: #6E1656;
 }
@@ -191,9 +104,89 @@
   transform: rotate(180deg);
 }
 
-/*------------------------------------*\
-    Media Queries
-\*------------------------------------*/
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 768px) {
+  .nav {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .nav .nav-list {
+    margin-left: 5px;
+  }
+  .nav .nav-list .nav-item .nav-submenu {
+    background: #fff;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    display: none;
+    position: absolute;
+    left: 2px;
+    width: 745px;
+    margin: -1px 0 0 0;
+    padding: 40px 0 30px 0;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+  }
+  .nav .nav-list .nav-item .nav-submenu .nav-submenu-item a {
+    padding: 10px 10px 10px 70px;
+  }
+  .nav .nav-list .nav-item .nav-submenu li.featured {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 455px;
+  }
+  .nav .nav-list .nav-item .nav-submenu li.featured a {
+    background-color: #fff;
+    background-image: url(../images/monitor.png);
+    background-repeat: no-repeat;
+    background-position: 10px 40px;
+    padding: 40px 80px 100px 255px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-size: 230px;
+    color: #828282;
+  }
+  .nav .nav-list .nav-item .nav-submenu li.featured a span {
+    display: block;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .nav .nav-list .nav-item .nav-submenu li.featured a .tag {
+    background-color: #ff5a00;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    font-size: 8pt;
+    text-transform: uppercase;
+    float: left;
+    padding: 0 4px;
+  }
+  .nav .nav-list .nav-item .nav-submenu li.featured a .product {
+    clear: both;
+    display: block;
+    font-size: 13pt;
+    margin: 20px 0;
+  }
+}
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* All Mobile Sizes (devices and browser) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .nav-mobile {
     display: block;
@@ -238,6 +231,19 @@
 }
 /* #Page Styles
 ================================================== */
+.hero {
+  padding: 345px 0 0 0;
+  height: 0;
+  overflow: hidden;
+  background: url(../images/hero_01_discover.jpg) top center no-repeat;
+  margin: 0 !important;
+}
+.hero .cta {
+  position: absolute;
+  top: 270px;
+  color: #fff;
+}
+
 a.feature {
   padding-left: 10px;
   background-image: url(../images/spr_ico_features_02.jpg);
@@ -266,11 +272,3 @@ a.feature {
 .manageyourprofile:hover {
   background-position: 0 0;
 }
-
-/* #Media Queries
-================================================== */
-/* Smaller than standard 960 (devices and browsers) */
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-/* All Mobile Sizes (devices and browser) */
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

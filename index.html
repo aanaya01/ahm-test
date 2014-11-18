@@ -26,20 +26,30 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
 </head>
 <body>
 	<div class="container">
 		<header>
-			<nav class="">
-				<ul>
-					<li><a href="#">products</a>
-						<ul>
-							<li><a href="#">Televisions</a></li>
-							<li><a href="#">Laptops</a></li>
-							<li><a href="#">Desktops</a></li>
-							<li><a href="#">Phones</a></li>
-							<li><a href="#">Tablets</a></li>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#">products</a>
+						<ul class="nav-submenu">
+							<li class="nav-submenu-item">
+								<a href="#">Televisions</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a href="#">Laptops</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a href="#">Desktops</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a href="#">Phones</a>
+							</li>
+							<li class="nav-submenu-item">
+								<a href="#">Tablets</a>
+							</li>
 							<li class="featured">
 								<a href="#">
 									<span class="tag">New</span>
@@ -49,18 +59,25 @@
 							</li>
 						</ul>
 					</li>
-					<li><a href="#">events</a></li>
-					<li><a href="#">news</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">contact</a></li>
+					<li class="nav-item">
+						<a href="#">events</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">news</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">about</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">contact</a>
+					</li>
 				</ul>
-					<a href="#" class="cart">cart <span>[2]</span></a>
 			</nav>
+			<a href="#" class="cart">cart <span>[2]</span></a>
 		</header>
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
-			<h5>Version 1.2</h5>
-			<hr />
+		<div class="sixteen columns hero">
+			<h2>Discover the Power of the Cube</h2>
+			<a href="#" class="cta">Learn More &raquo;</a>
 		</div>
 		<div class="eight columns">
 			<h3>Version 2.2 Coming Soon</h3>
@@ -77,7 +94,7 @@
 			<a href="#" class="nowinthecloud feature">Now in the Cloud <span>New features allow sharing between your iPhone and Mac</span></a>
 			<a href="#" class="manageyourprofile feature">Manage Your Profile <span>Now manage your profile through our customer portal.</span></a>
 		</div>
-		<footer>
+		<footer class="page-footer">
 			<img src="images/logo_footersmall_01.png" />
 			<p>Copyright &copy;, Fake Companies, LLC, All Rights Reserved</p>
 		</footer>
