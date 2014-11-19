@@ -478,6 +478,8 @@ $dark-grey: #828282;
 		width:320px !important;
 		margin-left:-10px !important;
 	}
+}
+@media only screen and (max-width: 479px) {
 	.news {
 		box-sizing:border-box;
 		padding:0 20px !important;
