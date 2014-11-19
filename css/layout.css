@@ -401,6 +401,9 @@
     width: auto;
     padding-left: 0;
   }
+  .page-header .logo {
+    margin-left: 75px;
+  }
 }
 @media only screen and (max-width: 959px) {
   .page-header .cart {
@@ -566,10 +569,9 @@
 
 @media only screen and (max-width: 479px) {
   .container .hero {
-    padding: 2em;
+    padding: 1em;
     height: auto;
     background-position: top right;
-    height:270px;
   }
   .container .hero h2 {
     color: #fff;
