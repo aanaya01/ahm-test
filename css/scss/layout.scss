@@ -87,6 +87,7 @@ $dark-grey: #828282;
 		z-index:100;
 		border-top:1px #fff solid;
 		margin-top:-1px;
+		clear:both;
 
 		.nav-list {
 			text-align:left;
@@ -422,6 +423,12 @@ $dark-grey: #828282;
 		}
 	}
 }
+@media only screen and (min-width:960px) {
+	.page-header {
+		width:auto;
+		padding-left:0;
+	}
+}
 @media only screen and (max-width: 959px) {
 	.page-header .cart {
 		-webkit-border-top-left-radius: 5px;
@@ -497,38 +504,6 @@ $dark-grey: #828282;
 }
 /* #Page Styles
 ================================================== */
-@media only screen and (min-width:960px) {
-	.page-header {
-		width:auto;
-		padding-left:0;
-	}
-}
-@media only screen and (min-width:768px) and (max-width: 959px){
-	.container .news {
-		padding-left:40px !important;
-		width:340px !important;
-	}
-	.container .features {
-		padding-left:0 !important;
-		width:340px !important;
-	}
-}
-@media only screen and (min-width:960px) and (max-width: 1199px){
-	.container .news {
-		padding-left:90px !important;
-		width:340px !important;
-	}
-	.container .features {
-		width:340px !important;
-	}
-}
-@media only screen and (max-width:960px) {
-	.hero {
-		width:100%;
-		margin-left:0;
-		margin-right:0;
-	}
-}
 .hero {
 	padding:345px 0 0 0;
 	height:0;
@@ -549,20 +524,6 @@ $dark-grey: #828282;
 		margin-left:30px;
 		&:hover {
 			text-decoration:underline;
-		}
-	}
-}
-@media only screen and (max-width: 479px) {
-	.container .hero {
-		padding:1em;
-		height:auto;
-		background-position:top right;
-		h2 {
-			color:#fff;
-			font-weight:bold;
-		}
-		.cta {
-			position:static;
 		}
 	}
 }
@@ -613,3 +574,43 @@ $dark-grey: #828282;
 .newdashboard {background-position:15px 17px;}
 .nowinthecloud {background-position:15px -131px;}
 .manageyourprofile {background-position:15px -280px;}
+@media only screen and (max-width: 479px) {
+	.container .hero {
+		padding:1em;
+		height:auto;
+		background-position:top right;
+		h2 {
+			color:#fff;
+			font-weight:bold;
+		}
+		.cta {
+			position:static;
+		}
+	}
+}
+@media only screen and (min-width:768px) and (max-width: 959px){
+	.container .news {
+		padding-left:40px !important;
+		width:340px !important;
+	}
+	.container .features {
+		padding-left:0 !important;
+		width:340px !important;
+	}
+}
+@media only screen and (min-width:960px) and (max-width: 1199px){
+	.container .news {
+		padding-left:90px !important;
+		width:340px !important;
+	}
+	.container .features {
+		width:340px !important;
+	}
+}
+@media only screen and (max-width:960px) {
+	.hero {
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+	}
+}

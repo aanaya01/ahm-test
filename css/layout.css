@@ -80,6 +80,7 @@
   z-index: 100;
   border-top: 1px #fff solid;
   margin-top: -1px;
+  clear: both;
 }
 .page-header .nav .nav-list {
   text-align: left;
@@ -395,6 +396,12 @@
     top: 178px;
   }
 }
+@media only screen and (min-width: 960px) {
+  .page-header {
+    width: auto;
+    padding-left: 0;
+  }
+}
 @media only screen and (max-width: 959px) {
   .page-header .cart {
     -webkit-border-top-left-radius: 5px;
@@ -476,40 +483,6 @@
 }
 /* #Page Styles
 ================================================== */
-@media only screen and (min-width: 960px) {
-  .page-header {
-    width: auto;
-    padding-left: 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container .news {
-    padding-left: 40px !important;
-    width: 340px !important;
-  }
-
-  .container .features {
-    padding-left: 0 !important;
-    width: 340px !important;
-  }
-}
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-  .container .news {
-    padding-left: 90px !important;
-    width: 340px !important;
-  }
-
-  .container .features {
-    width: 340px !important;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .hero {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 .hero {
   padding: 345px 0 0 0;
   height: 0;
@@ -533,20 +506,6 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 479px) {
-  .container .hero {
-    padding: 1em;
-    height: auto;
-    background-position: top right;
-  }
-  .container .hero h2 {
-    color: #fff;
-    font-weight: bold;
-  }
-  .container .hero .cta {
-    position: static;
-  }
-}
 .news {
   color: #a0a0a0;
   font-size: 1.3em;
@@ -603,4 +562,47 @@
 
 .manageyourprofile {
   background-position: 15px -280px;
+}
+
+@media only screen and (max-width: 479px) {
+  .container .hero {
+    padding: 1em;
+    height: auto;
+    background-position: top right;
+  }
+  .container .hero h2 {
+    color: #fff;
+    font-weight: bold;
+  }
+  .container .hero .cta {
+    position: static;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container .news {
+    padding-left: 40px !important;
+    width: 340px !important;
+  }
+
+  .container .features {
+    padding-left: 0 !important;
+    width: 340px !important;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .container .news {
+    padding-left: 90px !important;
+    width: 340px !important;
+  }
+
+  .container .features {
+    width: 340px !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .hero {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
