@@ -6,6 +6,7 @@
   color: #fff;
   font-size: 1.3em;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   width: 100%;
   overflow: hidden;
   padding-top: 40px;
@@ -30,6 +31,7 @@
 }
 .page-header .search {
   margin-top: 18px;
+  display: block;
 }
 .page-header .search input {
   font-size: 18pt;
@@ -319,18 +321,6 @@
   }
 
   .page-header .cart {
-    -webkit-border-top-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 0px;
-    -moz-border-radius-bottomright: 0px;
-    border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-bottom-left-radius: 0px;
     float: right;
     margin-top: -3.5em;
     margin-right: 20px;
@@ -370,9 +360,14 @@
   .page-header .nav .featured a {
     line-height: normal;
   }
+  .page-header .nav .featured a .price {
+    color: #000;
+    font-size: .75em;
+    font-weight: bold;
+  }
   .page-header .cart {
     position: absolute;
-    left: 50px;
+    right: 0px;
     top: 202px;
   }
   .page-header .logo {
@@ -398,6 +393,22 @@
   }
   .page-header .cart {
     top: 178px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .page-header .cart {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-left-radius: 0px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -459,6 +470,7 @@
 @media only screen and (max-width: 479px) {
   .news {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     padding: 0 20px !important;
   }
 }
@@ -506,6 +518,8 @@
   margin-bottom: 40px !important;
   border-bottom: 7px #e5e5e5 solid;
   position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 .hero .cta {
   position: absolute;
@@ -566,6 +580,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 .features a span {
   font-size: .7em;

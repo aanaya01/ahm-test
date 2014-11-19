@@ -11,6 +11,7 @@ $dark-grey: #828282;
 	color:#fff;
 	font-size:1.3em;
 	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	width:100%;
 	overflow:hidden;
 	padding-top:40px;
@@ -36,6 +37,7 @@ $dark-grey: #828282;
 
 	.search {
 		margin-top:18px;
+		display:block;
 		
 		input {
 			font-size:18pt;
@@ -334,22 +336,6 @@ $dark-grey: #828282;
 		border-bottom-right-radius: 5px;
 	}
 	.page-header .cart {
-		-webkit-border-top-left-radius: 5px;
-		-moz-border-radius-topleft: 5px;
-		border-top-left-radius: 5px;
-
-		-webkit-border-top-right-radius: 5px;
-		-moz-border-radius-topright: 5px;
-		border-top-right-radius: 5px;
-
-		-webkit-border-bottom-right-radius: 0px;
-		-moz-border-radius-bottomright: 0px;
-		border-bottom-right-radius: 0px;
-
-		-webkit-border-bottom-left-radius: 0px;
-		-moz-border-radius-bottomleft: 0px;
-		border-bottom-left-radius: 0px;
-
 		float:right;
 		margin-top:-3.5em;
 		margin-right:20px;
@@ -394,11 +380,16 @@ $dark-grey: #828282;
 			}
 			.featured a {
 				line-height:normal;
+				.price {
+					color:#000;
+					font-size:.75em;
+					font-weight:bold;
+				}
 			}
 		}
 		.cart {
 			position:absolute;
-			left:50px;
+			right:0px;
 			top:202px;
 
 		}
@@ -431,7 +422,25 @@ $dark-grey: #828282;
 		}
 	}
 }
+@media only screen and (max-width: 959px) {
+	.page-header .cart {
+		-webkit-border-top-left-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		border-top-left-radius: 5px;
 
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-radius-topright: 5px;
+		border-top-right-radius: 5px;
+
+		-webkit-border-bottom-right-radius: 0px;
+		-moz-border-radius-bottomright: 0px;
+		border-bottom-right-radius: 0px;
+
+		-webkit-border-bottom-left-radius: 0px;
+		-moz-border-radius-bottomleft: 0px;
+		border-bottom-left-radius: 0px;
+	}
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 	.page-header {
 		margin-top:20px !important;
@@ -482,6 +491,7 @@ $dark-grey: #828282;
 @media only screen and (max-width: 479px) {
 	.news {
 		box-sizing:border-box;
+		-moz-box-sizing:border-box;
 		padding:0 20px !important;
 	}
 }
@@ -527,6 +537,8 @@ $dark-grey: #828282;
 	margin-bottom: 40px !important;
 	border-bottom:7px $light-grey solid;
 	position:relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 
 	.cta {
 		position:absolute;
@@ -586,6 +598,7 @@ $dark-grey: #828282;
 	display:block;
 	width:100%;
 	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	span {
 		font-size:.7em;
 		font-weight:normal;
