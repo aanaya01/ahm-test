@@ -566,9 +566,10 @@
 
 @media only screen and (max-width: 479px) {
   .container .hero {
-    padding: 1em;
+    padding: 2em;
     height: auto;
     background-position: top right;
+    height:270px;
   }
   .container .hero h2 {
     color: #fff;
